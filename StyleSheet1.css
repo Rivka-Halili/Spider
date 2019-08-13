@@ -1,0 +1,133 @@
+﻿body {
+    background-position: center;
+    /* background-image: url('Pic/Board.PNG'); */
+}
+    
+div {
+    text-align: center;
+    display:inline-block;
+}
+
+#columns {
+    display: flex;
+    margin-left: 15vh;
+    margin-top: 4vh;
+}
+
+span {
+    display: inline-block;
+    width: 14vh;
+    height: 18vh;
+    font-size: 4vh;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0.5vh;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-image: url('Playing Cards.jpg');
+    background-color:white;
+}
+
+#piles {
+    min-height: 20vh;
+    margin-top: 30vh;
+    margin-left: 150vh;
+    display: flex;
+    flex-direction:row;
+    /*width: 15vh;
+    border-radius: 1.2vh;
+    border: 0.2vh solid white;*/
+}
+
+.pile {
+    /* background-image: url('Pic/ClosedCard.PNG'); */
+ /* background-color: white; */
+    margin-right: -16.5vh;
+    border-radius: 1.2vh;
+    border: 0.2vh solid gray;
+    width:14vh;
+    height:20vh;
+    display:inline-block;
+    background-image: repeating-radial-gradient(ellipse ,#b2bdcf, #e0e0e0 10%, green 10%);
+}
+
+.pile::after { 
+    content: '\2666';
+    font-size: 550px;
+    color: #bd1919
+  }
+.column {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    margin: 5px;
+    min-width: 15vh;
+}
+
+.card {
+   background-size:cover;
+    margin-top: -16.5vh;
+    border-radius: 1.2vh;
+    border: 0.2vh solid gray;
+}
+
+.card.closed {
+        background-image: repeating-radial-gradient(ellipse ,#b2bdcf, #e0e0e0 10%, green 10%);
+       border: 0.2vh solid white;
+    }
+
+.column .card:first-child {
+    margin-top: unset;
+}
+
+.card.card1 {
+    background-image: url('Pic/1.PNG');
+}
+.card.card2 {
+    background-image: url('Pic/2.PNG');
+}
+
+.card.card3{
+    background-image: url('Pic/3.PNG');
+}
+
+.card.card4 {
+    background-image: url('Pic/4.PNG');
+}
+
+.card.card5 {
+    background-image: url('Pic/5.PNG');
+}
+
+.card.card6 {
+    background-image: url('Pic/6.PNG');
+}
+
+.card.card7 {
+    background-image: url('Pic/7.PNG');
+}
+
+.card.card8 {
+    background-image: url('Pic/8.PNG');
+}
+
+.card.card9 {
+    background-image: url('Pic/9.PNG');
+}
+
+.card.card10 {
+    background-image: url('Pic/10.PNG');
+}
+
+.card.card11 {
+    background-image: url('Pic/j.PNG');
+}
+.card.card12 {
+    background-image: url('Pic/q.PNG');
+}
+.card.card13 {
+    background-image: url('Pic/k.PNG');
+}
+
